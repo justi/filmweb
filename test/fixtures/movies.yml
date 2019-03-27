@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  releaseDate: 2019-03-27
+  durationTime: 1
+  director: one
+  country: one
+
+two:
+  title: MyString
+  releaseDate: 2019-03-27
+  durationTime: 1
+  director: two
+  country: two
