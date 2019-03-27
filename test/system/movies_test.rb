@@ -16,8 +16,8 @@ class MoviesTest < ApplicationSystemTestCase
 
     fill_in "Country", with: @movie.country_id
     fill_in "Director", with: @movie.director_id
-    fill_in "Durationtime", with: @movie.durationTime
-    fill_in "Releasedate", with: @movie.releaseDate
+    fill_in "duration_time", with: @movie.duration_time
+    fill_in "release_date", with: @movie.release_date
     fill_in "Title", with: @movie.title
     click_on "Create Movie"
 
@@ -31,8 +31,8 @@ class MoviesTest < ApplicationSystemTestCase
 
     fill_in "Country", with: @movie.country_id
     fill_in "Director", with: @movie.director_id
-    fill_in "Durationtime", with: @movie.durationTime
-    fill_in "Releasedate", with: @movie.releaseDate
+    fill_in "duration_time", with: @movie.duration_time
+    fill_in "release_date", with: @movie.release_date
     fill_in "Title", with: @movie.title
     click_on "Update Movie"
 

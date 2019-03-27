@@ -6,8 +6,8 @@
   <thead>
     <tr>
       <th>Title</th>
-      <th>Releasedate</th>
-      <th>Durationtime</th>
+      <th>release_date</th>
+      <th>duration_time</th>
       <th>Director</th>
       <th>Country</th>
       <th colspan="3"></th>
@@ -18,8 +18,8 @@
     <% @movies.each do |movie| %>
       <tr>
         <td><%= movie.title %></td>
-        <td><%= movie.releaseDate %></td>
-        <td><%= movie.durationTime %></td>
+        <td><%= movie.release_date %></td>
+        <td><%= movie.duration_time %></td>
         <td><%= movie.director %></td>
         <td><%= movie.country %></td>
         <td><%= link_to 'Show', movie %></td>

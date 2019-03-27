@@ -22,8 +22,8 @@
   </div>
 
   <div class="field">
-    <%= form.label :birthDate %>
-    <%= form.date_select :birthDate, {
+    <%= form.label :birth_date %>
+    <%= form.date_select :birth_date, {
           order: [:day, :month, :year],
           prompt: { day: 'Select day', month: 'Select month', year: 'Select year' },
           start_year: Date.today.year - 18,

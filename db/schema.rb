@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2019_03_27_221519) do
   create_table "actors", force: :cascade do |t|
     t.string "name"
     t.string "surname"
-    t.date "birthDate"
+    t.date "birth_date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -44,8 +44,8 @@ ActiveRecord::Schema.define(version: 2019_03_27_221519) do
 
   create_table "movies", force: :cascade do |t|
     t.string "title"
-    t.date "releaseDate"
-    t.integer "durationTime"
+    t.date "release_date"
+    t.integer "duration_time"
     t.bigint "director_id"
     t.bigint "country_id"
     t.datetime "created_at", null: false

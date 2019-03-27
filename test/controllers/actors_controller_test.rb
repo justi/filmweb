@@ -17,7 +17,7 @@ class ActorsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create actor" do
     assert_difference('Actor.count') do
-      post actors_url, params: { actor: { birthDate: @actor.birthDate, name: @actor.name, surname: @actor.surname } }
+      post actors_url, params: { actor: {birth_date: @actor.birth_date, name: @actor.name, surname: @actor.surname } }
     end
 
     assert_redirected_to actor_url(Actor.last)
@@ -34,7 +34,7 @@ class ActorsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update actor" do
-    patch actor_url(@actor), params: { actor: { birthDate: @actor.birthDate, name: @actor.name, surname: @actor.surname } }
+    patch actor_url(@actor), params: { actor: {birth_date: @actor.birth_date, name: @actor.name, surname: @actor.surname } }
     assert_redirected_to actor_url(@actor)
   end
 

@@ -14,7 +14,7 @@ class ActorsTest < ApplicationSystemTestCase
     visit actors_url
     click_on "New Actor"
 
-    fill_in "Birthdate", with: @actor.birthDate
+    fill_in "birth_date", with: @actor.birth_date
     fill_in "Name", with: @actor.name
     fill_in "Surname", with: @actor.surname
     click_on "Create Actor"
@@ -27,7 +27,7 @@ class ActorsTest < ApplicationSystemTestCase
     visit actors_url
     click_on "Edit", match: :first
 
-    fill_in "Birthdate", with: @actor.birthDate
+    fill_in "birth_date", with: @actor.birth_date
     fill_in "Name", with: @actor.name
     fill_in "Surname", with: @actor.surname
     click_on "Update Actor"
