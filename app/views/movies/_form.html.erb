@@ -18,7 +18,13 @@
 
   <div class="field">
     <%= form.label :release_date %>
-    <%= form.date_select :release_date %>
+    <%= form.date_select :release_date, {
+        order: [:day, :month, :year],
+        prompt: { day: 'Select day', month: 'Select month', year: 'Select year' },
+        start_year: Date.today.year,
+        end_year: Date.today.year - 70
+    }, {required: true}
+    %>
   </div>
 
   <div class="field">
@@ -28,12 +34,12 @@
 
   <div class="field">
     <%= form.label :director_id %>
-    <%= form.text_field :director_id %>
+    <%= form.collection_select :director_id, Director.order(:name),:id,:name_with_initial, include_blank: false, prompt: true %>
   </div>
 
   <div class="field">
     <%= form.label :country_id %>
-    <%= form.text_field :country_id %>
+    <%= form.collection_select :country_id, Country.order(:name),:id,:name, include_blank: false, prompt: true %>
   </div>
 
   <div class="actions">
