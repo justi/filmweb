@@ -13,3 +13,8 @@ Country.create!([
   {name: "USA"},
   {name: "Włochy"}
 ])
+Director.create!([
+  {name: "Jonathan", surname: "Demme"},
+  {name: "Robert", surname: "Zemeckis"},
+  {name: "Christopher", surname: "Nolan"}
+])
