@@ -6,8 +6,8 @@
   <thead>
     <tr>
       <th>Title</th>
-      <th>release_date</th>
-      <th>duration_time</th>
+      <th>Release date</th>
+      <th>Duration time</th>
       <th>Director</th>
       <th>Country</th>
       <th colspan="3"></th>
@@ -20,8 +20,8 @@
         <td><%= movie.title %></td>
         <td><%= movie.release_date %></td>
         <td><%= movie.duration_time %></td>
-        <td><%= movie.director %></td>
-        <td><%= movie.country %></td>
+        <td><%= movie.director.name_with_initial %></td>
+        <td><%= movie.country.name %></td>
         <td><%= link_to 'Show', movie %></td>
         <td><%= link_to 'Edit', edit_movie_path(movie) %></td>
         <td><%= link_to 'Destroy', movie, method: :delete, data: { confirm: 'Are you sure?' } %></td>

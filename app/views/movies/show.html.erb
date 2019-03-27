@@ -6,23 +6,23 @@
 </p>
 
 <p>
-  <strong>release_date:</strong>
+  <strong>Release date:</strong>
   <%= @movie.release_date %>
 </p>
 
 <p>
-  <strong>duration_time:</strong>
+  <strong>Duration time:</strong>
   <%= @movie.duration_time %>
 </p>
 
 <p>
   <strong>Director:</strong>
-  <%= @movie.director %>
+  <%= @movie.director.name_with_initial %>
 </p>
 
 <p>
   <strong>Country:</strong>
-  <%= @movie.country %>
+  <%= @movie.country.name %>
 </p>
 
 <%= link_to 'Edit', edit_movie_path(@movie) %> |
