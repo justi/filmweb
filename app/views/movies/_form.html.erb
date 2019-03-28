@@ -42,6 +42,14 @@
     <%= form.collection_select :country_id, Country.order(:name),:id,:name, include_blank: false, prompt: true %>
   </div>
 
+  <div class="field">
+    <%= form.label :actors %>
+    <%= form.collection_check_boxes :actor_ids, Actor.all, :id, :name_with_initial do |b|
+      b.label(:"data-value" => b.value) { b.check_box + b.text }
+    end %>
+  </div>
+
+
   <div class="actions">
     <%= form.submit %>
   </div>

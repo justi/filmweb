@@ -24,6 +24,15 @@
   <strong>Country:</strong>
   <%= @movie.country.name %>
 </p>
+<p>Actors:
+  <ul class="list-group">
+    <% if @movie.actors.each do |actor| %>
+      <li><%= actor.name_with_initial %></li>
+    <% end.empty? %>
+      No actors yet
+    <% end %>
+  </ul>
+</p>
 
 <%= link_to 'Edit', edit_movie_path(@movie) %> |
 <%= link_to 'Back', movies_path %>
