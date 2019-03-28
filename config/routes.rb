@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
-  resources :movies
+  resources :movies do
+    resources :ratings
+  end
   resources :directors
   resources :actors
   resources :countries
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+
+  root 'movies#index'
 end

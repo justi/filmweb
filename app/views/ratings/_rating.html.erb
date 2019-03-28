@@ -1,0 +1,14 @@
+<p>
+  <strong>Nick:</strong> <%= rating.nick %>
+</p>
+<p>
+  <strong>Rating:</strong> <%= rating.value %>
+</p>
+<p>
+  <strong>Comment:</strong> <%= rating.comment %>
+</p>
+<p>
+  <%= link_to 'Destroy', movie_rating_path(@movie, rating),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %>
+</p>
